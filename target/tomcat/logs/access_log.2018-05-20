@@ -1,0 +1,14 @@
+0:0:0:0:0:0:0:1 - - [20/May/2018:17:33:07 +0530] "GET / HTTP/1.1" 302 - http-bio-8080-exec-1 101
+0:0:0:0:0:0:0:1 - - [20/May/2018:17:33:09 +0530] "GET /loginpage HTTP/1.1" 200 9974 http-bio-8080-exec-2 1168
+0:0:0:0:0:0:0:1 - - [20/May/2018:17:33:09 +0530] "GET /webjars/jquery/1.9.1/jquery.min.js HTTP/1.1" 200 92629 http-bio-8080-exec-3 27
+0:0:0:0:0:0:0:1 - - [20/May/2018:17:34:31 +0530] "POST /loginpage HTTP/1.1" 302 - http-bio-8080-exec-5 18
+0:0:0:0:0:0:0:1 - - [20/May/2018:17:34:31 +0530] "GET / HTTP/1.1" 200 5707 http-bio-8080-exec-6 314
+0:0:0:0:0:0:0:1 - - [20/May/2018:17:34:31 +0530] "GET /webjars/jquery/1.9.1/jquery.min.js HTTP/1.1" 200 92629 http-bio-8080-exec-7 9
+0:0:0:0:0:0:0:1 - - [20/May/2018:17:34:33 +0530] "GET /users/springcontent.json HTTP/1.1" 200 99 http-bio-8080-exec-8 1398
+0:0:0:0:0:0:0:1 - - [20/May/2018:17:42:55 +0530] "GET / HTTP/1.1" 302 - http-bio-8080-exec-10 39
+0:0:0:0:0:0:0:1 - - [20/May/2018:17:42:55 +0530] "GET /loginpage HTTP/1.1" 200 9974 http-bio-8080-exec-1 611
+0:0:0:0:0:0:0:1 - - [20/May/2018:17:42:55 +0530] "GET /webjars/jquery/1.9.1/jquery.min.js HTTP/1.1" 200 92629 http-bio-8080-exec-1 20
+0:0:0:0:0:0:0:1 - - [20/May/2018:17:43:04 +0530] "POST /loginpage HTTP/1.1" 302 - http-bio-8080-exec-1 9
+0:0:0:0:0:0:0:1 - - [20/May/2018:17:43:04 +0530] "GET / HTTP/1.1" 200 5707 http-bio-8080-exec-1 211
+0:0:0:0:0:0:0:1 - - [20/May/2018:17:43:04 +0530] "GET /webjars/jquery/1.9.1/jquery.min.js HTTP/1.1" 200 92629 http-bio-8080-exec-1 10
+0:0:0:0:0:0:0:1 - - [20/May/2018:17:43:05 +0530] "GET /users/springcontent.json HTTP/1.1" 200 99 http-bio-8080-exec-1 404

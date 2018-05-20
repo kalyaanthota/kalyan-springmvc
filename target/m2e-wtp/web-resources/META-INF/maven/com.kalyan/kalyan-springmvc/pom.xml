@@ -118,7 +118,11 @@
             <version>4.2.2.RELEASE</version>
         </dependency>
         
-        
+        <dependency>
+    <groupId>com.github.jsimone</groupId>
+    <artifactId>webapp-runner</artifactId>
+    <version>7.0.82.0</version>
+</dependency>
        
         <dependency>
             <groupId>com.google.code.gson</groupId>
@@ -164,7 +168,7 @@
                             <artifactItem>
                          <groupId>com.github.jsimone</groupId>
                         <artifactId>webapp-runner</artifactId>
-                                <version>8.5.23.0</version>
+                                <version>7.0.82.0</version>
                      <destFileName>webapp-runner.jar</destFileName>
                             </artifactItem>
                         </artifactItems>
