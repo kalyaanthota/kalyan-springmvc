@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [17/Nov/2017:21:58:15 +0530] "GET / HTTP/1.1" 302 - http-bio-8080-exec-1 95
+0:0:0:0:0:0:0:1 - - [17/Nov/2017:21:58:16 +0530] "GET /loginpage HTTP/1.1" 200 9974 http-bio-8080-exec-3 1149
+0:0:0:0:0:0:0:1 - - [17/Nov/2017:21:58:16 +0530] "GET /webjars/jquery/1.9.1/jquery.min.js HTTP/1.1" 200 92629 http-bio-8080-exec-4 23
+0:0:0:0:0:0:0:1 - - [17/Nov/2017:22:17:28 +0530] "GET / HTTP/1.1" 302 - http-bio-8080-exec-2 85
+0:0:0:0:0:0:0:1 - - [17/Nov/2017:22:17:29 +0530] "GET /loginpage HTTP/1.1" 200 9974 http-bio-8080-exec-3 136
+0:0:0:0:0:0:0:1 - - [17/Nov/2017:22:17:29 +0530] "GET /webjars/jquery/1.9.1/jquery.min.js HTTP/1.1" 200 92629 http-bio-8080-exec-4 21
