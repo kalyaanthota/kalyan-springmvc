@@ -3,6 +3,7 @@
 <div class="container">
 	<form:form method="post" action="/useraddress/saveOrUpdate" commandName="useraddress">
 		<form:hidden path="addrid" />
+		<form:hidden path="userid" />
 		<fieldset class="form-group">
 			<form:label path="lane">Lane</form:label>
 			<form:input path="lane" type="text" class="form-control"/>
@@ -31,8 +32,3 @@
 
 <%@ include file="common/footer.jspf"%>
 
-<script>
-	$('#targetDate').datepicker({
-		format : 'dd/mm/yyyy'
-	});
-</script>

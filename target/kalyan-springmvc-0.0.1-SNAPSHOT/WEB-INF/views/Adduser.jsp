@@ -17,10 +17,11 @@
 		</fieldset>
 		<fieldset class="form-group">
 			<form:label path="createtime">create time</form:label>
-			<form:input path="createtime" type="text" class="form-control"
-				/>
+			<!-- <form:input path="createtime" type="text" class="form-control"   />  -->
+			<form:input path="createtime"  type="text" class="form-control" id="datepicker" />
 			<form:errors path="createtime" cssClass="text-warning" />
 		</fieldset>
+		
 		<fieldset class="form-group">
 			<form:label path="email">email</form:label>
 			<form:input path="email" type="text" class="form-control"
@@ -30,11 +31,12 @@
 		<button type="submit" class="btn btn-success">Submit</button>
 	</form:form>
 </div>
-
+  
+<style>
+$( function() {
+    $( "#datepicker" ).datepicker({ dateFormat: 'dd/mm/yy' });
+     } );	 
+	 
+</style>    
 <%@ include file="common/footer.jspf"%>
 
-<script>
-	$('#targetDate').datepicker({
-		format : 'dd/mm/yyyy'
-	});
-</script>

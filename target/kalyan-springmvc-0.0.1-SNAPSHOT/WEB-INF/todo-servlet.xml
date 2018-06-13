@@ -20,7 +20,7 @@ http://www.springframework.org/schema/mvc
 http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd"> 
 
 
-	<context:component-scan base-package="com.todomodule,com.usersmodule" />
+	<context:component-scan base-package="com.todomodule,com.usersmodule,com.addressmodule" />
 
 	<mvc:annotation-driven />
 	<mvc:resources mapping="/webjars/**" location="/webjars/" />
@@ -79,7 +79,7 @@ http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
     <bean id="sessionFactory"
         class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
         <property name="dataSource" ref="dataSource" />
-        <property name="packagesToScan" value="com.usersmodule.entities" />
+        <property name="packagesToScan" value="com.usersmodule.entities,com.addressmodule.entities" />
         <property name="hibernateProperties">
             <props>
                 <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>

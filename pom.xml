@@ -124,11 +124,13 @@
     <version>7.0.88.0</version>
 	</dependency>
     
-	<dependency>
-		<groupid>org.apache.tomcat.embed</groupid>
-		<artifactid>tomcat-embed-jasper</artifactid>
 
-	</dependency>   
+<dependency>
+    <groupId>org.apache.tomcat.embed</groupId>
+    <artifactId>tomcat-embed-jasper</artifactId>
+    <version>9.0.8</version>
+</dependency>
+  
         
 		<dependency>
             <groupId>com.google.code.gson</groupId>
