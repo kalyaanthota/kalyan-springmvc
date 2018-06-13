@@ -1,1 +1,1 @@
-web:    java $JAVA_OPTS -jar target/webapp-runner-7.0.88.0.jar --port $PORT target/*.war
+web:    java $JAVA_OPTS -jar target/kalyan-springmvc-0.0.1-SNAPSHOT/WEB-INF/lib/webapp-runner-7.0.88.0.jar --port $PORT target/*.war
