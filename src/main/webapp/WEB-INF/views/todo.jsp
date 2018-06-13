@@ -18,11 +18,12 @@
 		<button type="submit" class="btn btn-success">Submit</button>
 	</form:form>
 </div>
-
+<style>
+$( function() {
+    $( "#datepicker" ).datepicker({ dateFormat: 'dd/mm/yy' });
+     } );	 
+	 
+</style>
 <%@ include file="common/footer.jspf"%>
 
-<script>
-	$('#targetDate').datepicker({
-		format : 'dd/mm/yyyy'
-	});
-</script>
+

@@ -118,11 +118,11 @@
             <version>4.2.2.RELEASE</version>
         </dependency>
         
-        <dependency>
+<!--         <dependency> 
     <groupId>com.github.jsimone</groupId>
     <artifactId>webapp-runner</artifactId>
     <version>7.0.82.0</version>
-</dependency>
+</dependency>-->
        
         <dependency>
             <groupId>com.google.code.gson</groupId>

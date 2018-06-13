@@ -1,11 +1,12 @@
-com\usersmodule\services\UsersServiceImpl.class
 com\todomodule\welcome\WelcomeController.class
 com\usersmodule\entities\user.class
-com\todomodule\DAO\TodoJDBCTemplate.class
 com\usersmodule\services\UsersService.class
-com\todomodule\DAO\TodoMapper.class
 com\todomodule\security\SecurityConfiguration.class
 com\usersmodule\controllers\UsersController.class
+com\usersmodule\daos\UsersDao.class
+com\usersmodule\services\UsersServiceImpl.class
+com\todomodule\DAO\TodoJDBCTemplate.class
+com\todomodule\DAO\TodoMapper.class
 com\todomodule\model\Todo.class
 com\todomodule\common\ExceptionController.class
 com\todomodule\todo\TodoController.class
@@ -13,4 +14,3 @@ com\usersmodule\daos\UsersDaoImpl.class
 com\todomodule\todo\rest\TodoRestController.class
 com\todomodule\common\LogoutController.class
 com\todomodule\todo\service\TodoService.class
-com\usersmodule\daos\UsersDao.class

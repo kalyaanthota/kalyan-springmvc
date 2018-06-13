@@ -19,7 +19,9 @@
 					<td>${user.createtime}</td>
 					<td>${user.email}</td>
 					<td>${user.password}</td>
-					<td><a type="button" class="btn btn-primary"
+					<td><a type="button" class="btn btn-info"
+						href="/users/update-useraddress?addrid=${useraddress.addrid}">Address</a>
+					<a type="button" class="btn btn-primary"
 						href="/users/update-user?id=${user.userid}">Edit</a> <a type="button"
 						class="btn btn-warning" href="/users/delete-user?id=${user.userid}">Delete</a>
 					</td>

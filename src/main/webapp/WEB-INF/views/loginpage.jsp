@@ -1,7 +1,40 @@
-  
+   <%@ include file="common/header.jspf"%>  
+
     
-    <div class="container">    
-        <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
+    
+    <div class="container"> 
+<div id="infobox" style="margin-top:50px;" class=" col-md-8  ">                    
+            <div class="panel panel-default " >
+                    <div class="panel-heading">
+                        <div class="panel-title">Design & Developed by:</div>
+                    </div>     
+
+                    <div style="padding-top:30px" class="panel-body " >
+
+                      <div class="jumbotron">
+  <h1 class="display-4">Kalyan Thota.</h1>
+  <p class="lead">I am Enginner, Software { Developer, Designer, Architect }.</p>
+  <hr class="my-4">
+  <p><h6> This application is powered by: </h6>
+  <p>
+  <img border="0" src="/images/bootstrap.png" alt="java" width="70" height="50" />
+  <img border="0" src="/images/AngularJS-large.png" alt="java" width="70" height="50" />
+  <img border="0" src="/images/html-icon.png" alt="java" width="70" height="50" />
+  <img border="0" src="/images/java_logo.png" alt="java" width="70" height="50" />
+  <img border="0" src="/images/JSP.png" alt="java" width="70" height="50" />
+  <img border="0" src="/images/spring_framework.png" alt="java" width="70" height="50" />
+  <img border="0" src="/images/java-jdbc.png" alt="java" width="70" height="50" />
+  <img border="0" src="/images/hibernate.png" alt="java" width="70" height="50" /> 
+  <img border="0" src="/images/development.png" alt="java" width="70" height="50" />
+  </p>
+ 
+</div>
+                        </div>                     
+                    </div>  
+        </div>
+     
+       
+        <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-4">                    
             <div class="panel panel-info" >
                     <div class="panel-heading">
                         <div class="panel-title">Sign In</div>
@@ -16,12 +49,12 @@
                                     
                             <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                        <input id="username" type="text" class="form-control" name="username" value="" placeholder="username or email">                                        
+                                        <input id="username" type="text" class="form-control" name="username" value="asdf" placeholder="username or email">                                        
                                     </div>
                                 
                             <div style="margin-bottom: 25px" class="input-group">
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                        <input id="password" type="password" class="form-control" name="password" placeholder="password">
+                                        <input id="password" type="password" class="form-control" name="password" value="asdf" placeholder="password">
                                     </div>
                                     
 
@@ -65,7 +98,7 @@
                         </div>                     
                     </div>  
         </div>
-        <div id="signupbox" style="display:none; margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+        <div id="signupbox" style="display:none; margin-top:50px" class="mainbox col-md-4">
                     <div class="panel panel-info">
                         <div class="panel-heading">
                             <div class="panel-title">Sign Up</div>
@@ -79,8 +112,6 @@
                                     <span></span>
                                 </div>
                                     
-                                
-                                  
                                 <div class="form-group">
                                     <label for="email" class="col-md-3 control-label">Email</label>
                                     <div class="col-md-9">
@@ -118,7 +149,7 @@
                                     <!-- Button -->                                        
                                     <div class="col-md-offset-3 col-md-9">
                                         <button id="btn-signup" type="button" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp Sign Up</button>
-                                        <span style="margin-left:8px;">or</span>  
+                                        <span style="margin-left:8px;"></span>  
                                     </div>
                                 </div>
                                 
@@ -129,16 +160,10 @@
                                     </div>                                           
                                         
                                 </div>
-                                
-                                
-                                
+                               
                             </form>
                          </div>
                     </div>
-
-               
-               
-                
-         </div> 
+			</div> 
     </div>
     
