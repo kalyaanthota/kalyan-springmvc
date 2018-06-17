@@ -12,7 +12,7 @@
 		<fieldset class="form-group">
 			<form:label path="targetDate">Target Date</form:label>
 			<form:input path="targetDate" type="text" class="form-control"
-				required="required" />
+				required="required" id="datepicker"/>
 			<form:errors path="targetDate" cssClass="text-warning" />
 		</fieldset>
 		<button type="submit" class="btn btn-success">Submit</button>

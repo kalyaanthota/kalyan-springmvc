@@ -6,6 +6,11 @@
 <head>
 <title>Todos Application</title>
 <script src="webjars/jquery/1.9.1/jquery.min.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
 <!-- <link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" media="screen">
 	
 <script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -19,13 +24,6 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>	
-
-<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-
 
 <style type="text/css">
 .footer-bottom {
@@ -58,17 +56,30 @@
 }
 
 #profile-image1 {
-    cursor: pointer;
+    cursor: hand;
   
-     width: 150px;
+     width: 200px;
     height: 250px;
 	border:2px solid #03b1ce ;}
 	.tital{ font-size:16px; font-weight:500;}
 	 .bot-border{ border-bottom:1px #696969 solid;  margin:5px 0  5px 0}	
 	 
+.transparent{    
+    background-color: rgba(0,0,0,0.15);
+}
+
+.panel{
+    background-color: transparent;
+    border: 1px #222;
+}
+
+.tableT{
+    background-color: transparent;
+    border: 1px #222;
+}
 
 </style>
 </head>
 
-<body>
+<body >
 

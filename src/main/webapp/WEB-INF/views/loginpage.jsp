@@ -1,10 +1,10 @@
    <%@ include file="common/header.jspf"%>  
-
+<body style="background-image:url(../images/Black-Background.jpg);" >
     
     
-    <div class="container"> 
+    <div class="container" > 
 <div id="infobox" style="margin-top:50px;" class=" col-md-8  ">                    
-            <div class="panel panel-default " >
+            <div class="panel panel-default transparent" >
                     <div class="panel-heading">
                         <div class="panel-title">Design & Developed by:</div>
                     </div>     
@@ -84,7 +84,7 @@
                                 <div class="form-group">
                                     <div class="col-md-12 control">
                                         <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
-                                            Don't have an account! 
+                                            <i class="text-warning" >Don't have an account!   </i> 
                                         <a href="#" onClick="$('#loginbox').hide(); $('#signupbox').show()">
                                             Sign Up Here
                                         </a>
@@ -148,7 +148,7 @@
                                 <div class="form-group">
                                     <!-- Button -->                                        
                                     <div class="col-md-offset-3 col-md-9">
-                                        <button id="btn-signup" type="button" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp Sign Up</button>
+                                        <button id="btn-signup" type="button" class="btn btn-info"><i class="icon-hand-right"></i> Sign Up</button>
                                         <span style="margin-left:8px;"></span>  
                                     </div>
                                 </div>
@@ -166,4 +166,4 @@
                     </div>
 			</div> 
     </div>
-    
+ </body>   

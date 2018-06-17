@@ -12,7 +12,7 @@
                     <div style="padding-top:30px" class="panel-body " >
 
                       <div class="jumbotron">
-  <h1 class="display-4">Kalyan Thota.</h1>
+  <h1 class="display-4"><span style="color:#ff00ff; font-size:18px; line-height:35px; font-family: Calibri;">Kalyan Thota.</span></h1>
   <p class="lead">I am Enginner, Software { Developer, Designer, Architect }.</p>
   <hr class="my-4">
   <p><h6> This application is powered by: </h6>
