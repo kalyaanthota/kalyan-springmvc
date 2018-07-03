@@ -1,6 +1,6 @@
 <%@ include file="common/header.jspf"%>
 <%@ include file="common/navigation.jspf"%>
-
+<body style="background-image:url(../images/x.jpg);" >
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
     	<script>
     	function Hello($scope, $http) {
@@ -20,11 +20,11 @@
         <a href="users/page" style="margin-right: 50px;" class="btn btn-info btn-rounded btn-lg">Click to USERS</a>
     </h2>
 </div>
-<div class="container">
+<div class="container ">
 	<div class="row">
        <div class="col-md-7 ">
 
-<div class="panel panel-default">
+<div class="panel panel-default transparent">
   <div class="panel-heading">  <h4 >User Profile :</h4></div>
    <div class="panel-body">
        
@@ -79,6 +79,4 @@
         $('#profile-image-upload').click();
     });
 });       
- </div>
-</div>
 
