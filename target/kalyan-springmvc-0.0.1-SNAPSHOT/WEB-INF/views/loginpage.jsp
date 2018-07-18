@@ -1,12 +1,14 @@
    <%@ include file="common/header.jspf"%>  
+
 <body style="background-image:url(../images/Black-Background.jpg);" >
+
+  
    <!-- Carousel
 ================================================== -->
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="0"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
         <li data-target="#myCarousel" data-slide-to="3"></li>
@@ -17,57 +19,69 @@
                  src="<c:url value="../images/back1.jpeg" />"
                  alt="First slide">
 
-            <div class="container">
+            <div class="container lay">
                 <div class="carousel-caption">
-                    <h1>Welcome to Kalyan's Spring Based App</h1>
+                    <h1 style="font-size: 40px; font-family: 'Faster One', cursive;">Welcome to Kalyan's Spring Based App</h1>
 
-                    <p>Here you can browse and Feel Power of Spring MVC, MVC Related Multi Techno Flows. Scroll Down Now for
+                    <p style="font-size: 40px; font-family: 'Niconne', cursive;">Here you can browse and Feel Power of Spring MVC, MVC Related Multi Techno Flows. Scroll Down Now for
                         A Dive Into Amazing New Technologys!</p>
 
                 </div>
             </div>
         </div>
         <div class="item">
-            <img class="second-slide home-image"
+            <img class="second-slide home-image "
                  src="<c:url value="../images/back2.jpeg" />"
                  alt="Second slide">
 
-            <div class="container">
+            <div class="container  lay">
                 <div class="carousel-caption">
-                    <h1>Facts You Should Know About Me....</h1>
+                    <h1 style="font-size: 40px; font-family: 'Faster One', cursive;">Facts You Should Know About Me....</h1>
 
-                    <p>I am a Engineer, International Java Certified programmer, Working as a Developer.</p>
+                    <p style="font-size: 40px; font-family: 'Niconne', cursive;">I am a Engineer, International Java Certified programmer, Working as a Developer.</p>
 
                 </div>
             </div>
         </div>
         <div class="item">
-            <img class="third-slide home-image"
+            <img class="third-slide home-image " 
                  src="<c:url value="../images/back3.jpeg" />"
-                 alt="Third slide">
+                 alt="Third slide"> 
 
-            <div class="container">
+            <div class="container  lay">
                 <div class="carousel-caption">
-                    <h1>It's A Agile Methodology</h1>
+                    <h1 style="font-size: 40px; font-family: 'Faster One', cursive;">It's Agile Methodology</h1>
 
-                    <p>Through ups and downs</p>
+                    <p style="font-size: 40px; font-family: 'Niconne', cursive;">Through ups and downs</p>
 
                 </div>
             </div>
         </div>
-         <div class="item">
-            <img class="third-slide home-image"
+         <div class="item" >
+           <img class="fourth-slide home-image "
                  src="<c:url value="../images/back4.jpg" />"
-                 alt="Third slide">
+                 alt="fourth slide"> 
 
-            <div class="container">
+            <div class="container  lay">
                 <div class="carousel-caption">
-                    <h1>Lets Look Down</h1>
-
-                    <p>Looking Down For Technologies and Login</p>
-
+                    <h1 style="font-size: 40px; font-family: 'Faster One', cursive;">Lets Look Down</h1>
+                    <p style="font-size: 40px; font-family: 'Niconne', cursive;">Looking Down For Technologies and Login
+                    	<div class="arrow bounce">
+  							<a class="glyphicon glyphicon-menu-down gi-5x" href="#"></a>
+  							<a class="glyphicon glyphicon-menu-down gi-5x" href="#"></a>
+  							<a class="glyphicon glyphicon-menu-down gi-5x" href="#"></a>
+						</div>
+						<div class="arrow bounce">
+  							<a class="glyphicon glyphicon-menu-down gi-5x" href="#"></a>
+  							<a class="glyphicon glyphicon-menu-down gi-5x" href="#"></a>  							
+						</div>
+						<div class="arrow bounce">
+  							<a class="glyphicon glyphicon-arrow-down gi-5x" href="#"></a>  							
+						</div>
+                    </p>
                 </div>
             </div>
+            
         </div>
     </div>
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -80,7 +94,7 @@
     </a>
 </div>
 <!-- /.carousel --> 
-    
+  
     <div class="container" > 
 <div id="infobox" style="margin-top:50px;" class=" col-md-8  ">                    
             <div class="panel panel-default transparent" >
@@ -95,7 +109,7 @@
   <p class="lead">I am Enginner, Software { Developer, Designer, Architect }.</p>
   <hr class="my-4">
   <p><h6><kbd> This application is powered by: </kbd></h6>
-  <p>
+  <p >
   <img border="0" src="/images/bootstrap.png" alt="java" width="70" height="50" />
   <img border="0" src="/images/AngularJS-large.png" alt="java" width="70" height="50" />
   <img border="0" src="/images/html-icon.png" alt="java" width="70" height="50" />
@@ -139,9 +153,9 @@
 
                                 
                             <div class="input-group">
-                                      <div class="checkbox">
-                                        <label>
-                                          <input id="login-remember" type="checkbox" name="remember" value="1"> Remember me
+                                      <div class="checkbox" >
+                                        <label style="color : white;">
+                                          <input id="login-remember" type="checkbox" name="remember" value="1" > Remember me...
                                         </label>
                                       </div>
                                     </div>
@@ -192,33 +206,33 @@
                                 </div>
                                     
                                 <div class="form-group">
-                                    <label for="email" class="col-md-3 control-label">Email</label>
+                                    <label for="email" class="col-md-3 control-label" style="color : white;">Email</label>
                                     <div class="col-md-9">
                                         <input type="text" class="form-control" name="email" placeholder="Email Address">
                                     </div>
                                 </div>
                                     
                                 <div class="form-group">
-                                    <label for="firstname" class="col-md-3 control-label">First Name</label>
+                                    <label for="firstname" class="col-md-3 control-label" style="color : white;">First Name</label>
                                     <div class="col-md-9">
                                         <input type="text" class="form-control" name="firstname" placeholder="First Name">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="lastname" class="col-md-3 control-label">Last Name</label>
+                                    <label for="lastname" class="col-md-3 control-label" style="color : white;">Last Name</label>
                                     <div class="col-md-9">
                                         <input type="text" class="form-control" name="lastname" placeholder="Last Name">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="password" class="col-md-3 control-label">Password</label>
+                                    <label for="password" class="col-md-3 control-label" style="color : white;">Password</label>
                                     <div class="col-md-9">
                                         <input type="password" class="form-control" name="passwd" placeholder="Password">
                                     </div>
                                 </div>
                                     
                                 <div class="form-group">
-                                    <label for="icode" class="col-md-3 control-label">Invitation Code</label>
+                                    <label for="icode" class="col-md-3 control-label" style="color : white;">Invitation Code</label>
                                     <div class="col-md-9">
                                         <input type="text" class="form-control" name="icode" placeholder="">
                                     </div>
@@ -245,4 +259,5 @@
                     </div>
 			</div> 
     </div>
+    
  </body>   
