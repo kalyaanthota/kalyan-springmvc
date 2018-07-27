@@ -2,8 +2,10 @@ package com.todomodule.model;
 
 import java.util.Date;
 
+import javax.persistence.Table;
 import javax.validation.constraints.Size;
 
+@Table(name="todo", schema = "public")
 public class Todo {
 	private int id;
 

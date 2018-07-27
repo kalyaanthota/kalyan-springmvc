@@ -56,6 +56,7 @@ public class TodoJDBCTemplate {
 		   }
 	   
 	   public void update(Integer id, String desc, Date targetDate, boolean isDone){
+		   System.out.println(desc+ targetDate+ isDone+ id);
 		      String SQL = "update TODO set desce = ?,targetDate = ?, isDone = ? where id = ?";
 		      jdbcTemplateObject.update(SQL, desc, targetDate, isDone, id);
 		      System.out.println("Updated Record with ID = " + id );
