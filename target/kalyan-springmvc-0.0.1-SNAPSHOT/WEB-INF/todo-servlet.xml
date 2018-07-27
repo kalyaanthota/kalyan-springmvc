@@ -49,12 +49,20 @@ http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
 	</bean>
 	
 	 <!-- Initialization for data source -->
-   <bean id="dataSource" 
+ <!--   <bean id="dataSource" 
       class = "org.springframework.jdbc.datasource.DriverManagerDataSource">
       <property name = "driverClassName" value = "com.mysql.jdbc.Driver"/>
       <property name = "url" value = "jdbc:mysql://localhost:3306/springdb"/>
       <property name = "username" value = "root"/>
       <property name = "password" value = "root"/>
+   </bean> -->
+   
+    <bean id="dataSource" 
+      class = "org.springframework.jdbc.datasource.DriverManagerDataSource">
+      <property name = "driverClassName" value = "org.postgresql.Driver"/>
+      <property name = "url" value = "jdbc:postgresql://ec2-79-125-12-27.eu-west-1.compute.amazonaws.com:5432/d30icuaqupghe5"/>
+      <property name = "username" value = "mqjunqoszwunxf"/>
+      <property name = "password" value = "bf5b1817158feb833193dbfc0008360a717d55e363ea56e6b45a721b372df63a"/>
    </bean>
 
    <!-- Definition for TODOJDBCTemplate bean -->

@@ -27,7 +27,7 @@ public class TodoJDBCTemplate {
 	
 	   
 	   public List retrieveTodos(){	
-		   String SQL = "select * from springdb.TODO";
+		   String SQL = "select * from public.TODO";
 		   todos =  jdbcTemplateObject.query(SQL,  new TodoMapper());
 		   //System.out.println(jdbcTemplateObject.query(SQL,  new TodoMapper()));
 		 	//System.out.println("todos===="+todos );
