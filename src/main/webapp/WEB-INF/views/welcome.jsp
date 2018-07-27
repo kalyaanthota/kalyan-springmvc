@@ -4,7 +4,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
     	<script>
     	function Hello($scope, $http) {
-    	    $http.get('http://localhost:8080/users/springcontent.json').
+    	    $http.get('/users/springcontent.json').
     	        success(function(data) {
     	            $scope.user = data;
 	          });
