@@ -27,7 +27,7 @@ public class TodoJDBCTemplate {
 	
 	   
 	   public List retrieveTodos(){	
-		   String SQL = "select * from public.TODO";
+		   String SQL = "select * from TODO";
 		   todos =  jdbcTemplateObject.query(SQL,  new TodoMapper());
 		   //System.out.println(jdbcTemplateObject.query(SQL,  new TodoMapper()));
 		 	//System.out.println("todos===="+todos );
@@ -35,11 +35,11 @@ public class TodoJDBCTemplate {
 	   }
 
 	   public void create(String name, String desc, Date targetDate, boolean isDone) {
-		   String ssql = "SELECT count(*) FROM springdb.TODO";
+		   String ssql = "SELECT count(*) FROM TODO";
 		int size = jdbcTemplateObject.queryForObject(ssql, Integer.class);
 		size++;
 		//System.out.println("size======"+size);
-		      String SQL = "insert into springdb.TODO (id, user, desce, targetDate, isDone) values (?, ?, ?, ?, ?)";
+		      String SQL = "insert into TODO (id, user, desce, targetDate, isDone) values (?, ?, ?, ?, ?)";
 		      jdbcTemplateObject.update( SQL, size, name, desc, targetDate, isDone);
 		      System.out.println("Created Record Name = " + name + " ==desc = " + desc+"==targetDate"+targetDate+"==isDone"+isDone);
 		      return;
@@ -48,14 +48,14 @@ public class TodoJDBCTemplate {
 	   
 	   
 	   public void delete(Integer id) {
-		      String SQL = "delete from springdb.TODO where id = ?";
+		      String SQL = "delete from TODO where id = ?";
 		      jdbcTemplateObject.update(SQL, id);
 		      System.out.println("Deleted Record with ID = " + id );
 		      return;
 		   }
 	   
 	   public void update(Integer id, String desc, Date targetDate, boolean isDone){
-		      String SQL = "update springdb.TODO set desce = ?,targetDate = ?, isDone = ? where id = ?";
+		      String SQL = "update TODO set desce = ?,targetDate = ?, isDone = ? where id = ?";
 		      jdbcTemplateObject.update(SQL, desc, targetDate, isDone, id);
 		      System.out.println("Updated Record with ID = " + id );
 		      return;
