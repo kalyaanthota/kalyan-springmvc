@@ -82,6 +82,7 @@ public class TodoController {
 			return "todo";
 
 		todo.setUser(getLoggedInUserName());
+		System.out.println("todo obj=="+todo);
 		service.updateTodo(todo);
 
 		model.clear();// to prevent request parameter "name" to be passed
