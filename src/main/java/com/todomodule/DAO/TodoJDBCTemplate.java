@@ -5,6 +5,8 @@ import javax.sql.DataSource;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+
+import java.sql.Types;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -57,8 +59,9 @@ public class TodoJDBCTemplate {
 	   
 	   public void update(Integer id, String desc, Date targetDate, boolean isDone){
 		   System.out.println(desc+ targetDate+ isDone+ id);
-		      String SQL = "update TODO set desce = ?,targetDate = ?, isDone = ? where todo_id = ?";
-		      jdbcTemplateObject.update(SQL, desc, targetDate, isDone, id);
+		      String SQL = "update TODO set desce = ?,targetDate = ?, isDone = ? where ID = ?";
+		      int[] types = {Types.VARCHAR,Types.VARCHAR, Types.TIMESTAMP, Types.SMALLINT};
+		      jdbcTemplateObject.update(SQL, new Object[] {desc, targetDate, isDone, id});
 		      System.out.println("Updated Record with ID = " + id );
 		      return;
 		   }
