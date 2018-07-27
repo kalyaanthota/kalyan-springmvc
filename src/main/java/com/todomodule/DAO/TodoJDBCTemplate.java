@@ -38,7 +38,8 @@ public class TodoJDBCTemplate {
 		   String ssql = "SELECT count(*) FROM TODO";
 		int size = jdbcTemplateObject.queryForObject(ssql, Integer.class);
 		size++;
-		//System.out.println("size======"+size);
+		System.out.println("size======"+size);
+		System.out.println("Created Record Name = " + name + " ==desc = " + desc+"==targetDate"+targetDate+"==isDone"+isDone);
 		      String SQL = "insert into TODO (id, user, desce, targetDate, isDone) values (?, ?, ?, ?, ?)";
 		      jdbcTemplateObject.update( SQL, size, name, desc, targetDate, isDone);
 		      System.out.println("Created Record Name = " + name + " ==desc = " + desc+"==targetDate"+targetDate+"==isDone"+isDone);
