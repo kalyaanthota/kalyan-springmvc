@@ -52,7 +52,7 @@ public class TodoJDBCTemplate {
 	   
 	   public void delete(Integer id) {
 		      String SQL = "delete from TODO where id = ?";
-		      jdbcTemplateObject.update(SQL, id);
+		      jdbcTemplateObject.update(SQL, new Object[]{id}, new TodoMapper());
 		      System.out.println("Deleted Record with ID = " + id );
 		      return;
 		   }
@@ -61,7 +61,7 @@ public class TodoJDBCTemplate {
 		   System.out.println(desc+ targetDate+ isDone+ id);
 		      String SQL = "update todo set DESEC = ?, TARGETDATE = ?, ISDONE = ? where ID = ?";
 		      int[] types = {Types.VARCHAR, Types.TIMESTAMP,Types.BOOLEAN, Types.SMALLINT};
-		      jdbcTemplateObject.update(SQL, new Object[] {desc, targetDate, isDone, id}, types);
+		      jdbcTemplateObject.query(SQL, new Object[] {desc, targetDate, isDone, id}, new TodoMapper());
 		     // jdbcTemplateObject.update(SQL, desc, targetDate, isDone, id);
 		      System.out.println("Updated Record with ID = " + id );
 		      return;
