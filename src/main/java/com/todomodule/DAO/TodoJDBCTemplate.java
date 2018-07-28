@@ -59,10 +59,10 @@ public class TodoJDBCTemplate {
 	   
 	   public void update(Integer id, String desc, Date targetDate, boolean isDone){
 		   System.out.println(desc+ targetDate+ isDone+ id);
-		      String SQL = "update table todo set desce = ?,targetDate = ?, isDone = ? where ID = ?";
-		     /* int[] types = {Types.VARCHAR, Types.TIMESTAMP,Types.VARCHAR, Types.SMALLINT};
-		      jdbcTemplateObject.update(SQL, new Object[] {desc, targetDate, isDone, id}, types);*/
-		      jdbcTemplateObject.update(SQL, desc, targetDate, isDone, id);
+		      String SQL = "update TABLE todo set desce = ?,targetDate = ?, isDone = ? where ID = ?";
+		      int[] types = {Types.VARCHAR, Types.TIMESTAMP,Types.VARCHAR, Types.SMALLINT};
+		      jdbcTemplateObject.update(SQL, new Object[] {desc, targetDate, isDone, id}, types);
+		     // jdbcTemplateObject.update(SQL, desc, targetDate, isDone, id);
 		      System.out.println("Updated Record with ID = " + id );
 		      return;
 		   }
