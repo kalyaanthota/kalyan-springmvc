@@ -42,7 +42,7 @@ public class TodoJDBCTemplate {
 		size++;
 		System.out.println("size======"+size);
 		System.out.println("Created Record Name = " + name + " ==desc = " + desc+"==targetDate"+targetDate+"==isDone"+isDone);
-		      String SQL = "insert into TODO (_id, user, desce, targetDate, isDone) values (?, ?, ?, ?, ?)";
+		      String SQL = "insert into table TODO (id, user, desce, targetDate, isDone) values (?, ?, ?, ?, ?)";
 		      jdbcTemplateObject.update( SQL, size, name, desc, targetDate, isDone);
 		      System.out.println("Created Record Name = " + name + " ==desc = " + desc+"==targetDate"+targetDate+"==isDone"+isDone);
 		      return;
@@ -59,9 +59,10 @@ public class TodoJDBCTemplate {
 	   
 	   public void update(Integer id, String desc, Date targetDate, boolean isDone){
 		   System.out.println(desc+ targetDate+ isDone+ id);
-		      String SQL = "update TODO set desce = ?,targetDate = ?, isDone = ? where ID = ?";
-		      int[] types = {Types.VARCHAR, Types.TIMESTAMP,Types.VARCHAR, Types.SMALLINT};
-		      jdbcTemplateObject.update(SQL, new Object[] {desc, targetDate, isDone, id}, types);
+		      String SQL = "update table todo set desce = ?,targetDate = ?, isDone = ? where ID = ?";
+		     /* int[] types = {Types.VARCHAR, Types.TIMESTAMP,Types.VARCHAR, Types.SMALLINT};
+		      jdbcTemplateObject.update(SQL, new Object[] {desc, targetDate, isDone, id}, types);*/
+		      jdbcTemplateObject.update(SQL, desc, targetDate, isDone, id);
 		      System.out.println("Updated Record with ID = " + id );
 		      return;
 		   }
