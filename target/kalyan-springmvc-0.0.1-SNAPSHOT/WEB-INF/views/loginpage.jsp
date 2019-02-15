@@ -1,5 +1,9 @@
    <%@ include file="common/header.jspf"%>  
-
+<head>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<style type="text/css"> <%@include file="/WEB-INF/CSS/SocialMedia.css"%></style>
+</head>
 <body style="background-image:url(../images/Black-Background.jpg);" >
 
   
@@ -108,7 +112,7 @@
   <h1 class="display-4">Kalyan Thota.</h1>
   <p class="lead">I am Enginner, Software { Developer, Designer, Architect }.</p>
   <hr class="my-4">
-  <p><h6><kbd> This application is powered by: </kbd></h6>
+  <p><h6><kbd> This application is powered by: </kbd></h6></p>
   <p >
   <img border="0" src="/images/bootstrap.png" alt="java" width="70" height="50" />
   <img border="0" src="/images/AngularJS-large.png" alt="java" width="70" height="50" />
@@ -120,7 +124,66 @@
   <img border="0" src="/images/hibernate.png" alt="java" width="70" height="50" /> 
   <img border="0" src="/images/development.png" alt="java" width="70" height="50" />
   </p>
- 
+  <hr class="my-4">
+  <p><h6><kbd> Social media links : </kbd></h6></p>
+ <div>
+      <ul>
+          <li>
+            <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span  class="fa fa-facebook" aria-hidden="true"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fa fa-twitter" aria-hidden="true"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fa fa-google-plus" aria-hidden="true"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fa fa-linkedin" aria-hidden="true"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fa fa-instagram" aria-hidden="true"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fa fa-envelope-o" aria-hidden="true"></span>
+            </a>
+          </li>
+      </ul>
+      </div>
 </div>
                         </div>                     
                     </div>  

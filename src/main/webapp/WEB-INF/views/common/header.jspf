@@ -4,13 +4,12 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <html>
 <head>
-<title>Todos Application</title>
+<title>Kalyan's Todos Application</title>
 <script src="webjars/jquery/1.9.1/jquery.min.js"></script>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
+  <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  
 <!-- <link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" media="screen">
 	
 <script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -25,6 +24,13 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>	
 <link href="https://fonts.googleapis.com/css?family=Faster+One|Niconne" rel="stylesheet"> 
+
+
+<!--<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  
+<link rel="stylesheet" type="text/css" href="/web-inf/CSS/SocialMedia.css">-->
+ 
 <style type="text/css">
 .footer-bottom {
     
@@ -136,7 +142,11 @@ a { color: white; text-decoration: blink; }
 
 .gi-5x{font-size: 2em;}
 
+
 </style>
+
+
+
 </head>
 
 <body >

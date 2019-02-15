@@ -71,7 +71,6 @@
     </div>
 </div>
 
-
 <%@ include file="common/footer.jspf"%>  
     <script>
               $(function() {

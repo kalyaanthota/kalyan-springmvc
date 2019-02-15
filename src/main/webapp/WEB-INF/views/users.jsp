@@ -3,13 +3,14 @@
 
 <div class="container">
 	<table class="table table-striped">
-		<caption><spring:message code="users.caption" /></caption>
+		<caption><kbd><spring:message code="users.caption" /></kbd></caption>
 		<thead>
 			<tr>
-				<th>username</th>
-				<th>create Date</th>
-				<th>email</th>
-				<th>password</th>
+				<th><kbd>username</kbd></th>
+				<th><kbd>create Date</kbd></th>
+				<th><kbd>email</kbd></th>
+				<th><kbd>password</kbd></th>
+				<th><kbd>Actions</kbd></th>
 			</tr>
 		</thead>
 		<tbody>

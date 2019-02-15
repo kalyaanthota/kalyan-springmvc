@@ -3,7 +3,7 @@
 
 <div class="container">
 	<table class="table table-striped">
-		<caption><spring:message code="todo.caption" /></caption>
+		<caption><kbd><spring:message code="todo.caption" /></kbd></caption>
 		<thead>
 			<tr>
 				<th>Description</th>

@@ -6,13 +6,13 @@
 <div class="pull-right ">
 
 <h2>
-        <a href="/users/page" style="margin-right: 10px;" class="btn btn-info btn-rounded btn-sm">USERS</a>
+        <a href="/users/page" style="margin-right: 20px;" class="btn btn-info btn-rounded btn-md">USERS</a>
     </h2>
 </div>
-<div class="clearfix"></div>
-<div class="container">
+
+<div class="container clearfix">
 	<table class="table table-striped">
-		<caption><spring:message code="useraddress.caption" /></caption>
+		<caption><kbd><spring:message code="useraddress.caption" /></kbd></caption>
 		<thead>
 			<tr>
 				<th>username</th>
@@ -30,10 +30,13 @@
 				</tr>
 		</tbody>
 	</table>
-	<div>
+	
+	
+	<div align="right">
 		 <a type="button" class="btn btn-success" href="/useraddress/add-useraddress?userid=${user.userid}">Add user address</a>    
 	</div>
 	
+	<hr>
 <div class="clearfix"></div>
 	<div id="tabs">
   <ul>

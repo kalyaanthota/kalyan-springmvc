@@ -1,19 +1,23 @@
    <%@ include file="common/header.jspf"%>  
-
+<head>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<style type="text/css"> <%@include file="/WEB-INF/CSS/SocialMedia.css"%><%@include file="/WEB-INF/CSS/imageeffect.css"%></style>
+</head>
 <body style="background-image:url(../images/Black-Background.jpg);" >
 
-  
+   
    <!-- Carousel
 ================================================== -->
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+ <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
-    <ol class="carousel-indicators">
+  <!--  <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
         <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
+    </ol> -->
+ <!-- <div class="carousel-inner" role="listbox">
         <div class="item active">
             <img class="first-slide home-image"
                  src="<c:url value="../images/back1.jpeg" />"
@@ -92,8 +96,35 @@
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
-</div>
+</div> 
 <!-- /.carousel --> 
+
+    <div class="container" > 
+    	<div class="section" > 
+    		<h2 style="text-align: center; color: white; font-size: 60px; font-family: 'Faster One', cursive;">Welcome to Kalyan's Spring Based App</h2>
+                    <h3 style="text-align: center; color: white; font-size: 40px; font-family: 'Niconne', cursive;">Here you can browse and Feel Power of Spring MVC, MVC Related Multi Techno Flows. Scroll Down Now for
+                        A Dive Into Amazing New Technologys!</h3>
+          </div>
+    	<div class="section" > 
+    		<h2 style="font-size: 60px; font-family: 'Faster One', cursive;">Facts You Should Know About Me....</h2>
+                    <h3 style="font-size: 40px; font-family: 'Niconne', cursive;">I am a Engineer, International Java Certified programmer, Working as a Developer.</h3>
+    		
+    	</div>
+    	<div class="section" >
+    		 <h2 style="font-size: 60px; font-family: 'Faster One', cursive;">It's Agile Methodology</h2>
+                    <h3 style="font-size: 40px; font-family: 'Niconne', cursive;">Through ups and downs</h3>
+    	 </div>
+    	<div class="section" >
+    		      <h2 style="font-size: 60px; font-family: 'Faster One', cursive;">Lets Look Down</h2>
+                    <h3 style="font-size: 20px; font-family: 'Niconne', cursive;">Looking Down For Technologies and Login  
+                    
+						<div class="arrow bounce">
+  							<a class="glyphicon glyphicon-arrow-down gi-4x" href="#"></a>  							
+						</div>
+					</h3>
+                    
+    	 </div>
+    </div>  
   
     <div class="container" > 
 <div id="infobox" style="margin-top:50px;" class=" col-md-8  ">                    
@@ -108,7 +139,8 @@
   <h1 class="display-4">Kalyan Thota.</h1>
   <p class="lead">I am Enginner, Software { Developer, Designer, Architect }.</p>
   <hr class="my-4">
-  <p><h6><kbd> This application is powered by: </kbd></h6>
+  <div >
+  <p><h6><kbd> This application is powered by: </kbd></h6></p>
   <p >
   <img border="0" src="/images/bootstrap.png" alt="java" width="70" height="50" />
   <img border="0" src="/images/AngularJS-large.png" alt="java" width="70" height="50" />
@@ -120,7 +152,68 @@
   <img border="0" src="/images/hibernate.png" alt="java" width="70" height="50" /> 
   <img border="0" src="/images/development.png" alt="java" width="70" height="50" />
   </p>
- 
+  </div>
+  <hr class="my-4">
+  <div  style="background-image:url(../images/bgpachi.jpg);">
+  <p><h6><kbd> Social media links : </kbd></h6></p>
+ <div>
+      <ul>
+          <li>
+            <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span  class="fa fa-facebook" aria-hidden="true"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fa fa-twitter" aria-hidden="true"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fa fa-google-plus" aria-hidden="true"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fa fa-linkedin" aria-hidden="true"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fa fa-instagram" aria-hidden="true"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fa fa-envelope-o" aria-hidden="true"></span>
+            </a>
+          </li>
+      </ul>
+     </div></div>
 </div>
                         </div>                     
                     </div>  

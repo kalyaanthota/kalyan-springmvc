@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import java.sql.Types;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -42,7 +43,7 @@ public class TodoJDBCTemplate {
 		size++;
 		System.out.println("size======"+size);
 		System.out.println("Created Record Name = " + name + " ==desc = " + desc+"==targetDate"+targetDate+"==isDone"+isDone);
-		      String SQL = "insert into table TODO (id, user, desce, targetDate, isDone) values (?, ?, ?, ?, ?)";
+		      String SQL = "insert into TODO (id, user, desce, targetDate, isDone) values (?, ?, ?, ?, ?)";
 		      jdbcTemplateObject.update( SQL, size, name, desc, targetDate, isDone);
 		      System.out.println("Created Record Name = " + name + " ==desc = " + desc+"==targetDate"+targetDate+"==isDone"+isDone);
 		      return;
@@ -51,19 +52,33 @@ public class TodoJDBCTemplate {
 	   
 	   
 	   public void delete(Integer id) {
-		      String SQL = "delete from TODO where id = ?";
-		      jdbcTemplateObject.update(SQL, new Object[]{id}, new TodoMapper());
+		      String SQL = "delete from todo where id = ?";
+		      int[] types = {Types.TINYINT};
+		      jdbcTemplateObject.update(SQL, new Object[]{id}, types, new TodoMapper());
 		      System.out.println("Deleted Record with ID = " + id );
 		      return;
 		   }
 	   
 	   public void update(Integer id, String desc, Date targetDate, boolean isDone){
-		   System.out.println(desc+ targetDate+ isDone+ id);
-		      String SQL = "update todo set DESEC = ?, TARGETDATE = ?, ISDONE = ? where ID = ?";
-		      int[] types = {Types.VARCHAR, Types.TIMESTAMP,Types.BOOLEAN, Types.INTEGER};
-		      jdbcTemplateObject.update(SQL, new Object[] {desc, targetDate, isDone, id}, types);
-		     // jdbcTemplateObject.update(SQL, desc, targetDate, isDone, id);
+		   
+		 String targetDateS = new SimpleDateFormat("dd/MM/yyyy").format(targetDate);
+		   
+    		   System.out.println(desc+ targetDateS+ isDone+ id);
+		   
+		      //String SQL = "update PUBLIC.TODO set PUBLIC.TODO.DESCE = ?, PUBLIC.TODO.ISDONE = ?, PUBLIC.TODO.TARGETDATE = ?  where 'PUBLIC.TODO.ID' = ?";
+		      
+		      String SQL = "UPDATE public.todo SET 'DESCE'="+desc+", 'ISDONE'="+isDone+", 'TARGETDATE'="+targetDateS+", 'user'="+desc+" WHERE 'ID'="+id+"";
+		      
+		      int[] types = {Types.VARCHAR, Types.VARCHAR, Types.VARCHAR,Types.VARCHAR};
+		      
+		    // jdbcTemplateObject.update(SQL, new Object[] {desc,  isDone, targetDateS, id}, types);
+		     
+		     //jdbcTemplateObject.update(SQL, desc, targetDate, isDone, id );
+		      
+		     jdbcTemplateObject.update(SQL);
+		     
 		      System.out.println("Updated Record with ID = " + id );
+		      
 		      return;
 		   }
 	   

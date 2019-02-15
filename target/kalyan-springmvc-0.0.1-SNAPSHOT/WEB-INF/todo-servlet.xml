@@ -49,21 +49,22 @@ http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
 	</bean>
 	
 	 <!-- Initialization for data source -->
- <!--   <bean id="dataSource" 
+  <!--   <bean id="dataSource" 
       class = "org.springframework.jdbc.datasource.DriverManagerDataSource">
       <property name = "driverClassName" value = "com.mysql.jdbc.Driver"/>
       <property name = "url" value = "jdbc:mysql://localhost:3306/springdb"/>
       <property name = "username" value = "root"/>
-      <property name = "password" value = "root"/>
-   </bean> -->
-   
-    <bean id="dataSource" 
+      <property name = "password" value = ""/>
+   </bean>
+   -->
+   <bean id="dataSource" 
       class = "org.springframework.jdbc.datasource.DriverManagerDataSource">
       <property name = "driverClassName" value = "org.postgresql.Driver"/>
-      <property name = "url" value = "jdbc:postgresql://ec2-79-125-12-27.eu-west-1.compute.amazonaws.com:5432/d30icuaqupghe5"/>
+      <property name = "url" value = "jdbc:postgresql://ec2-79-125-12-27.eu-west-1.compute.amazonaws.com:5432/d30icuaqupghe5?ssl=true&amp;sslmode=require"/>
       <property name = "username" value = "mqjunqoszwunxf"/>
       <property name = "password" value = "bf5b1817158feb833193dbfc0008360a717d55e363ea56e6b45a721b372df63a"/>
-   </bean>
+      
+   </bean> 
 
    <!-- Definition for TODOJDBCTemplate bean -->
    <bean id = "TodoJDBCTemplate" 
@@ -84,7 +85,8 @@ http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
 
 
  <!-- Session Factory Declaration -->
-    <bean id="sessionFactory"
+ 
+ <bean id="sessionFactory"
         class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
         <property name="dataSource" ref="dataSource" />
         <property name="packagesToScan" value="com.usersmodule.entities,com.addressmodule.entities" />
@@ -93,14 +95,33 @@ http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
                 <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
                 <prop key="hibernate.show_sql">true</prop>
                 <prop key="hibernate.enable_lazy_load_no_trans">true</prop>
-                <prop key="hibernate.default_schema">springdb</prop>
+                <!-- <prop key="hibernate.default_schema">public</prop> -->
                 <prop key="format_sql">true</prop>
                 <prop key="use_sql_comments">true</prop>
-                <prop key="useSSL">false</prop>
-               <!--  <prop key="hibernate.hbm2ddl.auto">create</prop>  -->
+                <prop key="useSSL">true</prop>
+             <prop key="hibernate.hbm2ddl.auto">update</prop>  
             </props>
         </property>
     </bean>
+ 
+ 
+    <!-- <bean id="sessionFactory"
+        class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <property name="packagesToScan" value="com.usersmodule.entities,com.addressmodule.entities" />
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</prop>
+                <prop key="hibernate.show_sql">true</prop>
+                <prop key="hibernate.enable_lazy_load_no_trans">true</prop>
+                <prop key="hibernate.default_schema">public</prop>
+                <prop key="format_sql">true</prop>
+                <prop key="use_sql_comments">true</prop>
+                <prop key="useSSL">true</prop>
+             <prop key="hibernate.hbm2ddl.auto">update</prop>  
+            </props>
+        </property>
+    </bean> -->
  
     <tx:annotation-driven transaction-manager="transactionManager" />
  

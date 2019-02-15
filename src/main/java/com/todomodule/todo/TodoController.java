@@ -1,5 +1,6 @@
 package com.todomodule.todo;
 
+import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -75,6 +76,7 @@ public class TodoController {
 		return "todo";
 	}
 
+	@SuppressWarnings("deprecation")
 	@RequestMapping(value = "/update-todo", method = RequestMethod.POST)
 	public String updateTodo(ModelMap model, @Valid Todo todo,
 			BindingResult result) {
@@ -82,6 +84,7 @@ public class TodoController {
 			return "todo";
 
 		todo.setUser(getLoggedInUserName());
+		//todo.setTargetDate(new Date(new SimpleDateFormat("dd/MM/yyyy").format(todo.getTargetDate())));
 		System.out.println("todo obj=="+todo);
 		service.updateTodo(todo);
 
